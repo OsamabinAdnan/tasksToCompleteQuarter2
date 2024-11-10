@@ -69,7 +69,7 @@ body::before {
         /* h1 tag of profile name dic */
         #profile-name h1 {
             text-align: center;
-            font-size: 45px;
+            font-size: 40px;
             color: #00b4d8;
             margin-bottom: 20px;
             
@@ -136,8 +136,9 @@ body::before {
         .contactInfo ul li {
             position: relative;
             list-style: none;
-            margin: 10px 0;
+            margin: 12px 0;
             justify-content: start;
+            font-size: 22px;
         }
         /* Contact info div2 ul li span */
         .contactInfo ul li span{
@@ -361,5 +362,86 @@ body::before {
     }
     #rightDiv{
         width: 100%;
+    }
+    
+    #profile-name h1 {
+        font-size: 30px;
+    }
+    .workExp h1 {
+        font-size: 30px;
+    }
+    .edu h1 {
+        font-size: 30px;
+    }
+    .h1btn h1 {
+        font-size: 30px;
+    }
+    .certificate h1 {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .contactInfo ul li {
+        font-size: 15px;
+        list-style: none;
+        margin: 10px 0;
+        justify-content: start;
+    }
+    .btn {
+        padding: 5px 10px;
+        border: 2px solid #03045e;
+        background-color: #03045e;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: normal;
+        font-size: 15px;
+        transition: transform 1s ease, background-color 1s ease, box-shadow 1s ease, filter 1s ease;
+    }
+    #aboutme-p p {       
+        font-weight: 100;
+        font-size: 15px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    .workExpMerchand h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        list-style: none;
+    }
+    .edu-h3-h5-p h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        list-style: none;
+    }
+    .skill h3 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+     .certificate-h3-h5 h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .workExp p {
+        font-size: 20px;
+    }
+    .workExp h5{
+        font-size: 20px;
+    }
+    .certificate h5 {
+        font-size: 18px;
+    }
+    .edu h5 {
+        font-size: 20px;
+    }
+    .edu p {
+        font-size: 18px;
     }
   }
