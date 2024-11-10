@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(Images/waves-line-art-wallpapers.jpg); 
+    background-position: center center cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* 50% opacity black overlay */
+    z-index: -1; /* Place it behind body content */
+  }
+
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 1100px;
+    background-color: white;
+    margin: 20px auto;
+    border: 2px solid #03045e;
+    border-radius: 20px;
+}
+/* Left Section */
+#leftDiv {
+    width: 40%;
+    max-height: 100%;
+    background-color: #03045e;;
+    border-radius: 20px;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+        /* Image Div */
+        .profile-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Img tag */
+        .profile-image img {
+            border-radius: 20px;
+            width: 250px;
+            min-width: 120px;
+            position: relative;
+            margin-top: 20px;
+            border: 3px solid #00b4d8;
+        }
+        /* Profile Name Div */
+        #profile-name{
+            align-items: center;
+            justify-items: center;
+            margin-top: 20px;
+            
+        }
+        /* h1 tag of profile name dic */
+        #profile-name h1 {
+            text-align: center;
+            font-size: 45px;
+            color: #00b4d8;
+            margin-bottom: 20px;
+            
+        }
+        /* span << h1 << profile name div */
+        #profile-name h4 {
+            font-size: 25px;
+            font-weight: lighter;
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* About me Section */
+        .aboutme{
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: white;
+            border-top: 1px solid #0077b6;
+        }
+
+        #aboutmeh2 {
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        #aboutme-h2-span{
+            text-align: center;
+            color: #00b4d8;
+            margin-bottom: 20px;
+        }
+        .aboutme p {       
+            font-weight: lighter;
+            font-size: small;
+            text-align: center;
+        }
+
+
+        /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+        /* Contact info main Div */
+        .contactInfo{
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: white;
+            border-top: 1px solid #0077b6;
+        }
+        /* Contact info div1 h2  */
+        #contactInfoh2{
+            text-align: center;
+            color: #00b4d8;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        /* Contact info div2 ul  */
+        .contactInfo ul{
+            justify-content: start;
+            font-size: 22px;
+        }
+        /* Contact info div2 ul li */
+        .contactInfo ul li {
+            position: relative;
+            list-style: none;
+            margin: 10px 0;
+            justify-content: start;
+        }
+        /* Contact info div2 ul li span */
+        .contactInfo ul li span{
+            margin-inline: 5px;
+        }
+        /* Contact info div2 ul li span i */
+        .contactInfo ul li span i {
+            color: #0077b6;
+        }
+        /* Contact info div2 ul li a */
+        .contactInfo ul li a{
+            position: relative;
+            list-style: none;
+            margin: 10px 0;
+            color: white;
+        }
+
+/* Right Section */
+#rightDiv {
+    width: 60%;
+    height: max-content;
+    letter-spacing: 1px;
+    position: relative;
+}
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* Work Experience Div */
+    .workExp{
+        width: 100%;
+        margin-top: 50px;
+        padding: 0px 30px;
+    }
+    /* Work experience DIV */
+    .workExp div{
+        margin-bottom: 20px;
+    }
+    /* Work exp main heading */
+    .workExp h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: #03045e;
+    }
+    /* Work experience h3*/
+    .workExpMerchand h3 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        list-style: none;
+    }
+    /* Work experience h5*/
+    .workExp h5 {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    /* Work experience h5*/
+    .workExp p {
+        font-size: 25px;
+        font-weight: lighter;
+        margin-bottom: 5px;
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* Education DIV */
+    
+    .edu{
+        width: 100%;
+        margin-top: 30px;
+        padding: 0px 30px;
+        
+    }
+    /* Work experience DIV */
+    .edu div{
+        margin-bottom: 20px;
+        
+    }
+    /* Work exp main heading */
+    .edu h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: #03045e;
+    }
+    /* Work experience h3*/
+    .edu-h3-h5-p h3 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        list-style: none;
+    }
+    /* Work experience h5*/
+    .edu-h3-h5-p h5 {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    /* Work experience h5*/
+    .workExp p {
+        font-size: 25px;
+        font-weight: lighter;
+        margin-bottom: 5px;
+    }
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* Skills DIV */
+
+    /* outside skill div h1 and btn div */
+    .h1btn{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+        padding: 0px 30px;   
+        
+    }
+    /* outside skills div h1 tag */
+    .h1btn h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        color: #03045e;
+        
+    }
+    /* outside skill div btn tag */
+    .btn {
+        padding: 10px 20px;
+        border: 2px solid #03045e;
+        background-color: #03045e;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: transform 1s ease, background-color 1s ease, box-shadow 1s ease, filter 1s ease;
+    }
+    /* outside skill div btn tag hover */
+    .btn:hover {
+        border: 2px solid #00b4d8;
+        background-color: #00b4d8;
+        color: black;
+    }
+
+    /* Skills div */
+    .skills {
+        width: 100%;
+        margin-top: 30px;
+        padding: 0px 30px;
+
+    }
+    /* DIV within skills div */
+    .skills div{
+        margin-bottom: 10px;
+    }
+
+    /* h3 tags of div within skills div */
+    .skill h3 {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    /* percen class of div within skills div */
+    .skills .box .percen {
+        position: relative;
+        width: 100%;
+        height: 15px;
+        background-color: #03045e;
+        border-radius: 20px;
+    }
+    /* div within percen class div (within skills div) */
+    .skills .box .percen div {
+        position: absolute;
+        height: 15px;
+        background-color: #00b4d8;
+        top: 0;
+        left: 0;
+        border-radius: 20px;
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* Certification Section */
+    
+    /* Cerification Div */
+    .certificate {
+        width: 100%;
+        margin-top: 30px;
+        padding: 0px 30px;
+    }
+    /* div within certification div */
+    .certificate-h3-h5 {
+        margin-bottom: 20px;
+    }
+    /* h1 in certification div */
+    .certificate h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: #03045e;
+    }
+    /* h3 tag in inner div */
+    .certificate-h3-h5 h3 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    /* h5 tag in inner div */
+    .certificate-h3-h5 h5 {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+/* Media Queries */
+@media (max-width: 767px) {
+    .container {
+       flex-direction: column; 
+    }
+    body {
+      font-size: 14px;
+    }
+    #leftDiv {
+        width: 100%;
+    }
+    #rightDiv{
+        width: 100%;
+    }
+  }

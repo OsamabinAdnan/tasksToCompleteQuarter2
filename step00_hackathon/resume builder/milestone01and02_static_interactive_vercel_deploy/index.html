@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kadwa:wght@400;700&family=Lusitana:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume Builder | Static | Interactive</title>
+</head>
+<body>
+   <div class="container">
+        <!-- Left Section -->
+         <div id="leftDiv">
+            
+            <!-- Profile Image, Name and Occupation -->
+            <div class="profile-image">
+                <img src="Images/myphoto.jpeg" alt="profile-image" width="200" >     
+            </div>
+            <div id="profile-name">
+                <h1>OSAMA bin ADNAN</h1>
+                <h4><i>Digital Marketing Professional | Textile Marketing Background | Aspiring Cloud Applied Generative Engineer</i></h4>
+            </div>
+            <!-- About me Section -->
+            <div class="aboutme">
+                <div id="aboutmeh2">
+                    <h2>About <span id="aboutme-h2-span">Me</span></h2>
+                </div>
+                <div id="aboutme-p">
+                    <p>
+                        I am a versatile professional with a solid foundation in textile marketing and merchandising, holding a Bachelor&#39;s in Textile Engineering and an MBA in Marketing. As a Certified Digital Marketer, I&#39;ve honed my skills in digital strategy and online brand enhancement. Currently, I&#39;m transitioning into Cloud Applied Generative Engineering to stay at the forefront of technology. My goal is to blend marketing expertise with full-stack development to create dynamic digital solutions. I&#39;m seeking opportunities where I can leverage my diverse skills to drive innovation and growth.
+                    </p>
+                </div>
+             </div>
+
+            <!-- Contact Info -->
+             <div class="contactInfo">
+                <div id="contactInfoh2">
+                    <h2>Contact Detail</h2>
+                </div>
+                <div>
+                    <ul>
+                        <li><span><i class="fa-solid fa-envelope"></i></span><span><a href="https://accounts.google.com/" target="_blank">binadnanosama@gmail.com</a></span></li>
+                        <li><span><i class="fa-brands fa-linkedin"></i></span><span><a href="https://www.linkedin.com/in/osama-bin-adnan/" target="_blank">/osama-bin-adnan</a></span></li>
+                        <li><span><i class="fa-brands fa-github"></i></span><span><a href="https://github.com/OsamabinAdnan" target="_blank">/OsamabinAdnan</a></span></li>
+                        <li><span><i class="fa-brands fa-facebook"></i></span><span><a href="https://www.facebook.com/usama.adnan.733/" target="_blank">/usama.adnan.733/</a></span></li>
+                        <li><span><i class="fa-brands fa-instagram"></i></span><span><a href="https://www.instagram.com/osamabinadnan" target="_blank">/osamabinadnan</a></span></li>
+                        <li><span><i class="fa-brands fa-whatsapp"></i></span><span><a href="https://wa.me/923022311916" target="_blank">/923022311916</a></span></li>
+                        <li><span><i class="fa-solid fa-location-dot"></i></span><span><a href="https://www.google.com/maps/place/North+Karachi+Twp,+Karachi,+Karachi+City,+Sindh,+Pakistan/" target="_blank">North Karachi, Karachi PK</a></span></li>
+
+                    </ul>
+                </div>
+             </div>       
+         </div>
+
+         <!-- Right Section -->
+          <div id="rightDiv">
+
+            <!-- Work Experience -->
+            <div class="workExp">
+                <h1>Work Experience</h1>
+                <div class="workExpMerchand">
+                    <h3>Merchandiser</h3>
+                    <h5><i>Feroze 1888 Textile Mills | 2019 - 2023</i></h5>
+                    <p>Working with different customer during my tenure at Feroze 1888 i.e. LIDL, LI & FUNG, PEPCO, Marubeni, H&M, Konimpex, Kinzler, and Zeeman
+                    </p>
+                </div>
+                <div class="workExpMerchand">
+                    <h3>MTO Printing</h3>
+                    <h5><i>Yunus Textile Mills | 2016 - 2017</i></h5>
+                    <p>Responsible to ensure the efficient running of SOP for the complete printing production cycle</p>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="edu">
+                <h1>Education</h1>
+                <div class="edu-h3-h5-p">
+                    <h3>MBA Marketing</h3>
+                    <h5><i>IQRA University | 2019 - 2023</i></h5>
+                    <p>Scored 3.57 CPGA out of 4.0</p>
+                </div>
+                <div class="edu-h3-h5-p">
+                    <h3>BS Textile Science and Engineering</h3>
+                    <h5><i>Karachi University | 2008 - 2012</i></h5>
+                    <p>Scored 3.48 CPGA out of 4.0</p>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="h1btn">
+                <h1>Skills</h1>
+                <Button class="btn" id="togglebtn">Show Skills</Button>
+            </div>
+            <div class="skills" id="skills" style="display:none;">
+                <!-- 1st % bar -->
+                <div class="box">
+                    <h3>HTML</h3>
+                        <div class="percen">
+                            <div style="width: 88%;"></div>
+                        </div>
+                </div>
+                <!-- 2nd % bar -->
+                <div class="box">
+                    <h3>CSS</h3>
+                        <div class="percen">
+                            <div style="width: 83%;"></div>
+                        </div>
+                </div>
+                <!-- 3rd % bar -->
+                <div class="box">
+                    <h3>Typescript</h3>
+                        <div class="percen">
+                            <div style="width: 85%;"></div>
+                        </div>
+                </div>
+                <!-- 4th % bar -->
+                <div class="box">
+                    <h3>Tailwind CSS</h3>
+                        <div class="percen">
+                            <div style="width: 90%;"></div>
+                        </div>
+                </div>
+                <!-- 5th % bar -->
+                <div class="box">
+                    <h3>NextJS</h3>
+                        <div class="percen">
+                            <div style="width: 82%;"></div>
+                        </div>
+                </div>
+                <!-- 6th % bar -->
+                <div class="box">
+                    <h3>Figma</h3>
+                        <div class="percen">
+                            <div style="width: 84%;"></div>
+                        </div>
+                </div>
+                <!-- 7th % bar -->
+                <div class="box">
+                    <h3>Digital Marketing</h3>
+                        <div class="percen">
+                            <div style="width: 85%;"></div>
+                        </div>
+                </div>
+            </div>
+
+            <!-- Certification -->
+            <div class="certificate">
+                <h1>Certification</h1>
+                <div class="certificate-h3-h5">
+                    <h3>The Fundamentals of Digital Marketing</h3>
+                    <h5>Google Digital Garage | 2021</h5>
+                </div>
+                <div class="certificate-h3-h5">
+                    <h3>Freelancing</h3>
+                    <h5>DigiSkills.pk | 2022</h5>
+                </div>
+                <div class="certificate-h3-h5">
+                    <h3>Graphic Designing</h3>
+                    <h5>DigiSkills.pk | 2022</h5>
+                </div>
+                <div class="certificate-h3-h5">
+                    <h3>SEO (Search Engine Optimization)</h3>
+                    <h5>DigiSkills.pk | 2022</h5>
+                </div>
+                <div class="certificate-h3-h5">
+                    <h3>Data Analytics & Business Intelligence</h3>
+                    <h5>DigiSkills.pk | 2022</h5>
+                </div>
+                <div class="certificate-h3-h5">
+                    <h3>Virtual Assistant</h3>
+                    <h5>DigiSkills.pk | 2022</h5>
+                </div>
+                <div class="certificate-h3-h5">
+                    <h3>Certified Digital Marketer</h3>
+                    <h5>Institute of Digital Marketing Pakistan (IDM) | 2024</h5>
+                </div>
+
+            </div>
+          </div>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
