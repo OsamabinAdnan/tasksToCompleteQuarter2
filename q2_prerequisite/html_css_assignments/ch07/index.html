@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ch_7 | Form</title>
+</head>
+<body>
+    <h1>Chapter # 7 - Forms</h1>
+    <form action="">
+        <fieldset class="field1">
+            <legend>Your Details</legend>
+            <!-- Your Name -->
+             <p >
+                <label for="name" id="name">Name:</label>
+                <input type="text" name="name" id="name" size="15" maxlength="30">
+            </p>
+            <!-- Your Email -->
+            <p id="InputEmail">
+                <label for="email" id="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </p>
+        </fieldset>
+        <fieldset class="field1">
+            <legend>Your Review</legend>
+            <!-- List Section -->
+            <p>
+                <label for="list" id="listItems">How did you hear us?</label>
+                <select id="list" name="job" onchange="showOtherField()">
+                    <option value="google">Google</option>
+                    <option value="ig">Instagram</option>
+                    <option value="fb">Facebook</option>
+                    <option value="yt">YouTube</option>
+                    <option value="other">Other</option> <!-- Option to show additional field -->
+                  </select>
+                  <div id="otherSource" style="display: none; margin-top: 10px;">
+                    <label for="otherJob">Please specify:</label>
+                    <input type="text" id="otherJob" name="otherJob" placeholder="Enter your source">
+                  </div>
+            </p>
+            <!-- Radio Section -->
+            <p>
+                <label for="" id="radio">Would you visit again?</label>
+                <p id="radiobtn">
+                <label for="yes"><input type="radio" name="visit" value="y" id="yes"> Yes</label>
+                <label for="no"><input type="radio" name="visit" value="n" id="no"> No</label>
+                <label for="maybe"><input type="radio" name="visit" value="mb" id="maybe"> May be </label>
+                </p>
+            </p>
+            <!-- Comment Section -->
+            <p id="comment">
+                <p><label for="comment">Comment:</label></p>
+                <p><textarea id="comment" name="comment" rows="4" cols="50"></textarea></p>
+                
+            </p>
+            <!-- Sign me up for emailup update checkbox -->
+            <p>
+                <label for="checkbox">
+                <input type="checkbox" id="checkbox"> Sign me up for email update</label>
+            </p>
+            <!-- Submit Button -->
+             <p>
+                <label for="submit">
+                <button id="submit">Submit Review</button>
+                </label>
+             </p>
+        </fieldset>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

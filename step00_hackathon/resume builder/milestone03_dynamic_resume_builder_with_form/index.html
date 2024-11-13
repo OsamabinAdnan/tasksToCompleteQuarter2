@@ -3,16 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+
+    <title>Dynamic Resume Builder with Form</title>
 </head>
 <body>
     <div class="container">
-        <section class="mainHeading">
-            <h1>Dynamic Resume Builder</h1>
-        </section>
+        <h1>Dynamic Resume Builder</h1>
+        <!-- Resume Form -->
+        <form action="" id="resumeForm">
+            <!-- Profile Picture -->
+            <div class="form-group">
+                <label for="profilePic">Profile Picture</label>
+                <input type="file" id="profilePic" name="profilePic" accept="image/*" >
+            </div>
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <!-- Father Name -->
+            <div class="form-group">
+                <label for="fatherName">Father's Name</label>
+                <input type="text" id="fatherName" name="fatherName" placeholder="Enter your father's name" required>
+            </div>
+            <!-- date of birth -->
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <!-- Address -->
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" required>
+            </div>
+            <!-- Education -->
+            <div class="form-group">
+                <label for="education" id="edu">Education</label>
+                <div>
+                    <label>Matriculation</label>
+                    <input type="text" id="matricDegree" name="matricDegree" placeholder="Degree Title">
+                    <input type="number" id="matricFromYear" name="matricFromYear" placeholder="From Year" style="border-radius: 10px; padding: 0px 10px;">
+                    <input type="number" id="matricToYear" name="matricToYear" placeholder="To Year" style="border-radius: 10px; padding: 0px 10px;">
+                </div>
+                <div>
+                    <label>Intermediate</label>
+                    <input type="text" id="intermediateDegree" name="intermediateDegree" placeholder="Degree Title">
+                    <input type="number" id="intermediateFromYear" name="intermediateFromYear" placeholder="From Year" style="border-radius: 10px; padding: 0px 10px;">
+                    <input type="number" id="intermediateToYear" name="intermediateToYear" placeholder="To Year" style="border-radius: 10px; padding: 0px 10px;">
+                </div>
+                <div>
+                    <label>Bachelor's Degree</label>
+                    <input type="text" id="bachelorDegree" name="bachelorDegree" placeholder="Degree Title">
+                    <input type="number" id="bachelorFromYear" name="bachelorFromYear" placeholder="From Year" style="border-radius: 10px; padding: 0px 10px;" >
+                    <input type="number" id="bachelorToYear" name="bachelorToYear" placeholder="To Year"style="border-radius: 10px; padding: 0px 10px;" >
+                </div>
+            </div>
+            <!-- Working Experience -->
+            <div class="form-group">
+                <label for="experience">Work Experience</label>
+                <textarea id="experience" name="experience" placeholder="Enter your work experience"></textarea>
+            </div>
+            <!-- Skills -->
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <textarea id="skills" name="skills" placeholder="Enter your skills" required></textarea>
+            </div>
+            <!-- Generate Button -->
+            <button type="submit" class="btn">Generate Resume</button>
+        </form>
     </div>
+
+    <!-- Output -->
+    <div id="resumePreview" class="resume-preview" style="display:none;">
+        <h2>Generated Resume</h2>
+        <div class="section">
+            <h3>Profile Picture</h3>
+            <img id="previewProfilePic" class="profile-img" src="" alt="Profile Picture" width="250" height="250">
+        </div>
+        <div class="section">
+            <h3>Personal Information</h3>
+            <p><span>Name:</span> <span id="previewName"></span></p>
+            <p><span>Father's Name:</span> <span id="previewFatherName"></span></p>
+            <p><span>Date of Birth:</span> <span id="previewDob"></span></p>
+            <p><span>Email:</span> <span id="previewEmail"></span></p>
+            <p><span>Phone:</span> <span id="previewPhone"></span></p>
+            <p><span>Address:</span> <span id="previewAddress"></span></p>
+        </div>
+        <div class="section">
+            <h3>Education</h3>
+            <p><span>Matriculation:</span> <span id="previewMatricDegree"></span> from <span id="previewMatricFromYear"></span> to <span id="previewMatricToYear"></span></p>
+            <p><span>Intermediate:</span> <span id="previewIntermediateDegree"></span> from <span id="previewIntermediateFromYear"></span> to <span id="previewIntermediateToYear"></span></p>
+            <p><span>Bachelor's Degree:</span> <span id="previewBachelorDegree"></span> from <span id="previewBachelorFromYear"></span> to <span id="previewBachelorToYear"></span></p>
+        </div>
+        <div class="section">
+            <h3>Work Experience</h3>
+            <p id="previewExperience"></p>
+        </div>
+        <div class="section">
+            <h3>Skills</h3>
+            <p id="previewSkills"></p>
+        </div>
+    </div>
+    
     
     <script src="script.js"></script>
 </body>

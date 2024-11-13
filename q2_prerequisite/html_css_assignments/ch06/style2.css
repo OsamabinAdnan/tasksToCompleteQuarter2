@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+.h1Div{
+    display: flex;
+    margin: 0px auto;
+}
+h1{
+    text-align: center;
+    margin: 75px auto;
+    font-size: 55px;    
+}
+.MainDiv{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    margin: 0px auto;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* First Row Working */
+.firstRow{
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+/* Orange Color box */
+#orange {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: #FF7F50;
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+/* Blank space in 1st row */
+#blank1 {
+    height: 100px;
+    border: 3px solid black;
+}
+/* Blue Color box */
+#blue{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: #6495ed;
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.secondRow {
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: 100px 100px auto 100px 100px 100px 100px 100px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+#violet {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: violet;
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+#darkblue{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: #7b68ee;
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+#brown {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: #a0522d;
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+#salmon {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: salmon;
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+#goldenrod {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: #Daa520;
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@ */
+.thirdRow {
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: 100px 100px auto 100px 100px 100px 100px 100px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+#green {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: #2e8b57;
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+/* Forth Row */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.fourthRow {
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+#yellow {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: #ffd700;
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+/* Fifth Row */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.fifthRow {
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+/* Sixth Row */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.sixthRow {
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+#pink {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: #ffb6c1;
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;    
+}
+/* Seventh Row */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.seventhRow {
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+#white {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: white;
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;    
+}
+/* Second Div */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.secondMainDiv {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 3px solid black;
+    margin: 0px auto;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 75px;
+    position: relative;
+}
+.placeholderDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.placeholder{
+    width: 40px;
+    height: 210px;
+    border: 3px solid black;
+}
+.elementsDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.elementsDiv2{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 8px;
+}
+#pink2 {
+    width: 100px;
+    height: 99px;
+    border: 3px solid black;
+    background-color: #ffb6c1;
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;    
+}

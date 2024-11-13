@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(184, 244, 181);
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #136306;
+  font-size: 2.8em ;
+}
+
+h2{
+  text-align: left;
+  margin: 20px 0;
+  color: #136306;
+  font-size: 1.8em ;
+}
+
+form {
+  width: 80%;
+  max-width: 900px;
+  margin: 20px auto;
+  background-image: url(green.png);
+  background-size:cover ;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background-color: rgb(184, 244, 181);
+  color: black ;
+  border: 2px solid rgb(184, 244, 181);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #136306;
+  border: 2px solid #136306;
+  color: white;
+}
+
+#resumeOutput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-image: url(green.png);
+  background-size:cover ;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#resumeOutput h2 {
+  text-align: center;
+  color: #136306;
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+#resumeOutput p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+#share-link-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#copy-btn {
+  background-color: rgb(184, 244, 181);;
+  color: #000000;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#copy-btn:hover {
+  background-color: #136306;
+  color: white;
+}
+
+a#share-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+a#share-link:hover {
+  text-decoration: underline;
+  color: #136306;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1024px) {
+  form {
+    padding: 20px;
+  }
+
+  button {
+    font-size: 1em;
+  }
+
+  #resumeOutput {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: calc(100% - 20px);
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  #resumeOutput {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  form {
+    padding: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: calc(100% - 20px);
+  }
+
+  button {
+    padding: 8px;
+    font-size: 0.8em;
+  }
+
+  #resumeOutput {
+    padding: 8px;
+  }
+
+  #resumeOutput p {
+    font-size: 0.9em;
+  }
+}
